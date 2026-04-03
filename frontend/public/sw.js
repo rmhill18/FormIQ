@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ai-fitness-coach-v1';
+const CACHE_NAME = 'formiq-v1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -51,7 +51,7 @@ self.addEventListener('fetch', (event) => {
 // Push notifications
 self.addEventListener('push', (event) => {
   const data = event.data ? event.data.json() : {};
-  const title = data.title || 'AI Fitness Coach';
+  const title = data.title || 'FormIQ';
   const options = {
     body: data.body || 'Time to check in with your fitness goals!',
     icon: '/icon-192.png',

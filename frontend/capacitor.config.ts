@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.aifitnesscoach.app',
-  appName: 'AI Fitness Coach',
+  appId: 'com.formiq.app',
+  appName: 'FormIQ',
   webDir: 'dist',
   server: {
     androidScheme: 'https',

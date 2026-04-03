@@ -1,5 +1,5 @@
 #!/bin/bash
-# AI Fitness Coach - Start Script
+# FormIQ - Start Script
 # Usage: ./start.sh
 
 set -e
@@ -12,7 +12,7 @@ if [ ! -f "$SCRIPT_DIR/.env" ]; then
   exit 1
 fi
 
-echo "🚀 Starting AI Fitness Coach..."
+echo "🚀 Starting FormIQ..."
 
 # Start backend
 echo "📡 Starting FastAPI backend on http://localhost:8000"

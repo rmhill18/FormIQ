@@ -65,7 +65,7 @@ export default function AuthScreen({ onAuthenticated }: Props) {
         <div className="w-20 h-20 bg-primary-500 rounded-3xl flex items-center justify-center mb-6 shadow-lg shadow-primary-500/30">
           <Sparkles className="w-10 h-10 text-white" />
         </div>
-        <h1 className="text-3xl font-black text-white mb-2">AI Fitness Coach</h1>
+        <h1 className="text-3xl font-black text-white mb-2">FormIQ</h1>
         <p className="text-gray-400 text-center text-sm">Your personal AI coach for fitness, nutrition, and recovery</p>
       </div>
 

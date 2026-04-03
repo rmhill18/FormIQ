@@ -84,7 +84,7 @@ async def get_current_auth(
     return auth
 
 
-app = FastAPI(title="AI Fitness Coach API", version="2.0.0")
+app = FastAPI(title="FormIQ API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,

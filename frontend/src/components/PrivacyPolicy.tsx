@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
       <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
         <p className="text-sm text-green-300 font-medium">Your privacy matters</p>
         <p className="text-xs text-gray-400 mt-1">
-          AI Fitness Coach is designed with privacy in mind. Your health data stays on your own server and is never sold or shared.
+          FormIQ is designed with privacy in mind. Your health data stays on your own server and is never sold or shared.
         </p>
       </div>
 

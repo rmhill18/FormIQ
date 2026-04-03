@@ -1,7 +1,7 @@
 {
-  "id": "com.aifitnesscoach.app",
-  "name": "AI Fitness Coach",
-  "short_name": "FitCoach",
+  "id": "com.formiq.app",
+  "name": "FormIQ",
+  "short_name": "FormIQ",
   "description": "Your AI-powered personal fitness and nutrition coach",
   "start_url": "/",
   "display": "standalone",
