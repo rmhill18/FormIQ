@@ -6,9 +6,9 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if [ ! -f "$SCRIPT_DIR/.env" ]; then
-  echo "⚠️  No .env file found. Copy .env.example and add your ANTHROPIC_API_KEY."
-  echo "   cp .env.example .env"
+if [ ! -f "$SCRIPT_DIR/backend/.env" ]; then
+  echo "⚠️  No .env file found. Copy backend/.env.example and add your keys."
+  echo "   cp backend/.env.example backend/.env"
   exit 1
 fi
 
