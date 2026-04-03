@@ -86,15 +86,19 @@ async def get_current_auth(
 
 app = FastAPI(title="FormIQ API", version="2.0.0")
 
+_default_origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost",
+    "capacitor://localhost",
+    "ionic://localhost",
+]
+_extra = os.environ.get("ALLOWED_ORIGINS", "")
+_allowed_origins = _default_origins + [o.strip() for o in _extra.split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "http://localhost",          # Capacitor Android
-        "capacitor://localhost",     # Capacitor iOS
-        "ionic://localhost",
-    ],
+    allow_origins=_allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -104,6 +108,11 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup():
     await init_db()
+
+
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
 
 
 # ─── Pydantic Schemas ─────────────────────────────────────────────────────────
