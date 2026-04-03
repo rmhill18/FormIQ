@@ -6,6 +6,7 @@ export default defineConfig(({ command }) => ({
   // Use relative paths for production builds (required for Capacitor native)
   base: command === 'build' ? './' : '/',
   server: {
+    host: '0.0.0.0',
     port: 5173,
     headers: {
       'Cache-Control': 'no-store',
